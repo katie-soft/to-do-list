@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://kit.fontawesome.com/a74d9d881c.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="page">
+    <h1 class="page__title">To Do List</h1>
+    <div class="search">
+        <input class="input search__input" type="text" placeholder="Search for a task">
+        <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass icon"></i></button>
+    </div>
+    
+    <div class="content__wrapper">
+        <div class="list__wrapper">
+            <div class="input__wrapper">
+                <button class="btn btn-add"><i class="fa-solid fa-plus icon"></i></button>
+                <input class="input list__input" id="newItem" type="text" placeholder="Type your task here">
+            </div>
+
+            <div class="alert-message alert-message_EmptyInputField">Input field is empty</div>
+            
+            <ul class="list list__items-to-do"></ul>
+        </div>     
+        
+        <div class="list__wrapper">
+            <div class="title__wrapper">
+                <i class="fa-solid fa-check title__icon"></i>
+                <span class="list__title">Completed tasks</span>
+            </div>
+            
+            <ul class="list list__items-completed"></ul>
+            <!--<button class="btn btn_show-more">Show more</button>-->
+        </div>   
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
